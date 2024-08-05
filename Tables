@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            .t{
+                background-color:black;
+                color:white
+            }
+            table,tr{
+                border-width: 3px;
+                border-style: solid;
+                border-collapse: collapse;
+                border-color: black;
+            }
+            input{
+                border-width: 2px;
+                border-color: black;
+            }
+            textarea{
+                border-width: 2px;
+                border-color: black;
+                margin: 0;
+            }
+            .m
+            {
+                margin:10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <table>
+            <tr class="t">
+                <td>
+                   <b> Enter User Name</b>
+                </td>
+                <td>
+                   <input type="text"> 
+                </td>
+            </tr>
+            <tr>
+                <td class="m">
+                    <b>Enter Address</b>
+                </td>
+                <td>
+                    <input type="text"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Comment</b>
+                </td>
+                <td>
+                    <textarea rows="3" cols="20" form="usrform"></textarea>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
