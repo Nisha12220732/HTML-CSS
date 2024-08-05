@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border:1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>CREDIT CARD</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="Gender"> Visa <input type="radio" name="Gender"> Diners</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Numbers</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <td><button>Submit</button></td>
+        <td><button>Reset</button></td>
+    </table>
+</body>
+<html> 
