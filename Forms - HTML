@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> This is my first form</h1>
+    <form action="/submit" method ="post">
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label for = "name"> Full Name <span aria-label="required">*</span></label>
+        <input  id ="name" name = "name" type="text" required autocomplete="name" placeholder="e.g. John Doe" />
+        <br>
+        <br>
+        <label for = "email">Email <span aria-label="required">*</span></label>
+        <input id = "email" name = "email" type="email" required autocomplete="email" placeholder = "e.g. JohnDoe1234@gmail.com" />
+        <br>
+        <br>
+        <label for ="Phonenumber">Mobile no. <span aria-label="required">*</span></label>
+        <input id = "Phonenumber" name = "Phonenumber" type ="tel" required autocomplete="Contact" placeholder = "e.g. 9876543210" />
+        <br>
+        <br>
+        <label for = "gender">Gender <span aria-label="required">*</span></label>
+        <select id = "gender" name = "gender" required>
+            <option value = "M">Male</option>
+            <option value = "F">Female</option>
+            <option value = "Other">Other</option>
+            <option value = "*">Prefer  not to say</option>
+        </select>
+        <br>
+        <br>
+
+        <label for "message">Message <span aria-label="required">*</span></label>
+        <textarea id = "message" name = "message" row = "5" required placeholder = "Write your message here"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Prefrences</legend>
+        <label >
+            <input name = "newsletter" type = "checkbox" value = "subscribe" checked />
+            Subscribe to newsletter
+        </label>
+        <br>
+        <label>
+            <input name = "updates" type = "checkbox" value = "product"/>
+            Get product updates
+        </label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Other input types</legend>
+        <label for = "colours"> Favourite colour <span aria-label="required">*</span></label>
+        <input name = "colours" id = "colours" type = "color" required placeholder = "Select your favourite color" />
+        <br>
+        <br>
+        <label for = "address">Address <span aria- aria-label="required">*</span></label>
+        <input name = "address" id ="address" type = "url" required placeholder = "Enter link of your website">
+        <br>
+        <br>
+        <label for = "date">Date of Birth <span aria- aria-label="required">*</span></label>
+        <input name = "date" id ="date" type = "date" required placeholder = "Enter your Birthdate">
+        <br>
+        <br>
+        <label for = "datetimelocal">Date and Time <span aria- aria-label="required">*</span></label>
+        <input name = "datetimelocal" id ="datetimelocal" type = "datetime-local" required placeholder = "Enter date and time">
+        <br>
+        <br>
+        <label for = "password">Password <span aria-label="required">*</span></label>
+        <input name = "password" id ="password" type = "password" required placeholder = "Enter password of your website">
+        <br>
+        <br>
+        <label for = "fileupload"> Upload Resume <span aria-label="required">*</span></label>
+        <input name = "file" id = "file" type = "file" required placeholder = "Upload Resume"/>
+        <br>
+        <br>
+        <label for = "experience">How you felt: </label>
+        <select id = "experience" name = "experience[]" multiple size="6">
+            <option value ="Happy"> Happy</option>
+            <option value = "Very-Happy"> Very-Happy</option>
+            <option value = "ecstatic">Ecstatic</option>
+            <option value = "Euphoric">Euphoric</option>
+            <option value = "Confused">Confused</option>
+            <option value = "Wanting more">Wanting more</option>
+        </select>
+
+
+    </fieldset>
+    <button type = "submit">Submit</button>
+    <button type = "reset">Reset</button>
+    </form>
+</body>
+</html>
